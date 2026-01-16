@@ -14,4 +14,4 @@ We run competitions that add real value, you can find the most current competiti
 # Rootstock
 # Spark
 # Stacks
-# USD Stablecoin Layer
+# USD Stablecoins
