@@ -41,44 +41,45 @@
       }
     }
 
-    // Full FAQ loading script
-    fetch('faq-content.md')
-      .then(response => response.text())
-      .then(md => {
-        const html = marked.parse(md, { gfm: true, breaks: true });
-        document.getElementById('faq-content').innerHTML = html;
-        hljs.highlightAll();
+    // Load and render FAQ
+  fetch('faq-content.md')
+    .then(response => response.text())
+    .then(md => {
+      const html = marked.parse(md, { gfm: true, breaks: true });
+      document.getElementById('faq-content').innerHTML = html;
+      hljs.highlightAll();  // If using code highlighting
 
-        // Collapsible questions (h2 under h1 categories)
-        const faqContent = document.getElementById('faq-content');
-        const headings = faqContent.querySelectorAll('h1, h2');
-        headings.forEach(heading => {
-          if (heading.tagName === 'H2') {
-            const details = document.createElement('details');
-            const summary = document.createElement('summary');
-            summary.innerHTML = heading.innerHTML;
-            heading.replaceWith(details);
-            details.appendChild(summary);
-            let next = details.nextSibling;
-            while (next && next.tagName !== 'H1' && next.tagName !== 'H2') {
-              details.appendChild(next);
-              next = details.nextSibling;
-            }
+      // Collapsible questions (h2 under h1 categories)
+      const faqContent = document.getElementById('faq-content');
+      const headings = faqContent.querySelectorAll('h1, h2');
+      headings.forEach(heading => {
+        if (heading.tagName === 'H2') {
+          const details = document.createElement('details');
+          const summary = document.createElement('summary');
+          summary.innerHTML = heading.innerHTML;
+          heading.replaceWith(details);
+          details.appendChild(summary);
+          let next = details.nextSibling;
+          while (next && next.tagName !== 'H1' && next.tagName !== 'H2') {
+            details.appendChild(next);
+            next = details.nextSibling;
           }
-        });
-      })
-      // Make it an accordion: close other details when one opens
- document.querySelectorAll('details').forEach(detail => {
-  detail.addEventListener('toggle', function() {
-    if (this.open) {  // Only act when opening (not closing)
-      document.querySelectorAll('details').forEach(other => {
-        if (other !== this) {
-          other.open = false;  // Close all others
         }
       });
-    }
-  });
-});
+
+      // NEW: Accordion behavior - only one open at a time
+      document.querySelectorAll('details').forEach(detail => {
+        detail.addEventListener('toggle', function() {
+          if (this.open) {
+            document.querySelectorAll('details').forEach(other => {
+              if (other !== this) {
+                other.open = false;
+              }
+            });
+          }
+        });
+      });
+    })
       .catch(error => {
         console.error('Error loading FAQ:', error);
         document.getElementById('faq-content').innerHTML = '<p>Error loading FAQ. Please try again later.</p>';
