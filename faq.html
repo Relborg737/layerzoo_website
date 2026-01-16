@@ -54,12 +54,12 @@
                 }
             }
           // Load FAQ Markdown
-    fetch('faq-content.md')
-      .then(response => response.text())
-      .then(md => {
-        const html = marked.parse(md, { gfm: true, breaks: true });
-        document.getElementById('faq-content').innerHTML = html;
-        hljs.highlightAll();
+          fetch('faq-content.md')
+           .then(response => response.text())
+           .then(md => {
+            const html = marked.parse(md, { gfm: true, breaks: true });
+           document.getElementById('faq-content').innerHTML = html;
+           hljs.highlightAll();
 
        
 
