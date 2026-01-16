@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - LayerZoo</title>
-  <link rel="stylesheet" href="style.css"> <!-- Your existing CSS -->
-  <!-- Optional: for code highlighting in FAQ answers (if you have code snippets) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
-</head>
-<body>
-  <!-- Header with topnav (copy from your other pages) -->
-  <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="blueprint.html">Blueprint</a>
-    <a href="competitions.html">Competitions</a>
-    <a href="faq.html">Faq</a>
-    <a href="about.html">About</a>
-    <!-- Add other links as needed -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LayerZoo - Bitcoin Layer 2 Stories & Education</title>
+        <meta name="description" content="FAQ - LayerZoo">
+        <meta name="author" content="LayerzWallet.com">
 
-  <!-- Main content -->
-  <div class="descriptionDiv"> <!-- Or your main container class, e.g., .body-text or .grid -->
-    <h1>Frequently Asked Questions</h1>
-    <div id="faq-content"></div>
-  </div>
+        <!-- Embed page for social media posts -->
+        <meta property="og:description" content="LayerZoo - A Bitcoin & Bitcoin Layer2 Education & Community site">
+        <meta property="og:title" content="LayerZoo">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.layerzoo.com">
+        <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
+        <meta property=​"og:​site_name" content=​"layerzoo.com">
 
-  <!-- Libraries via CDN (add JS minimally) -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@mobypixel">
+        <meta name="twitter:creator" content="@mobypixel">
+        <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
+        <meta name="twitter:description" content="YOUR_SITE description">
+        <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
 
-  <script>
-    // Responsive nav toggle (if not already in a shared JS—add if needed)
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    // Load FAQ Markdown
+        <!-- Page Style -->
+        <link rel="stylesheet" type="text/css" href="style.css?version=1">    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="rightVerticalLine">LayerZoo.com</a>
+            <a href="blueprint.html">The Blueprint</a>
+            <a href="competitions.html">Competitions</a>
+            <a href="faq.html">Faq</a>
+            <a href="about.html">About</a>
+            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
+            </a>
+        </div>
+
+        
+
+        <!-- Navigation Script -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+          // Load FAQ Markdown
     fetch('faq-content.md')
       .then(response => response.text())
       .then(md => {
         const html = marked.parse(md, { gfm: true, breaks: true });
         document.getElementById('faq-content').innerHTML = html;
         hljs.highlightAll();
+
+        <!-- Libraries via CDN (add JS minimally) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
         // Collapsible questions (h2 under h1 categories)
         const faqContent = document.getElementById('faq-content');
@@ -71,6 +87,9 @@
         console.error('Error loading FAQ:', error);
         document.getElementById('faq-content').innerHTML = '<p>Error loading FAQ. Please try again later.</p>';
       });
-  </script>
-</body>
+        </script>
+    </body>
 </html>
+
+
+
