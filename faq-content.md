@@ -9,6 +9,11 @@ We run competitions that add real value, you can find the most current competiti
 # Ark
 # Botanix
 # Citrea
+# General
+## What is the difference between a Coin and a Token?
+A coin is native to a blockchain eg. Stacks is a coin, because it has its own blockchain and is produced through proof of transfer.
+A token is on top of another blockchain, eg. $Duke is a token on the Stacks blockchain and is produced as the result of a smart contract
+A token
 # Lightning
 # Liquid
 # Rootstock
