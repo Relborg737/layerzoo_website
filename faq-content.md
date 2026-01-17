@@ -3,7 +3,7 @@
 LayerZoo is a community education project focussed on building a community of likeminded individuals who believe Bitcoin and want to promote its adoption.
 # Competitions
 ## Where can I learn more about the competitions?
-We run competitions that add real value, you can find the most current competition in the [LayerZoo Telegram Group](https://t.me/LayerZoo>LayerZoo)
+We run competitions that add real value, you can find the most current competition in the [LayerZoo Telegram Group](https://t.me/layerzoo)
 # Bitcoin
 # Alpen 
 # Ark
