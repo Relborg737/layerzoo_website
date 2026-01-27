@@ -53,8 +53,8 @@
             
             <!-- Example Collapsible Item 1 -->
             <details class="collapsible">
-                <summary>Intermediate Topic 1 (e.g., Layer Optimization)</summary>
-                <p>Short description: Techniques for optimizing layers in mid-level projects.</p>
+                <summary>Intermediate Topic 1 (e.g., Layer Optimisation)</summary>
+                <p>Short description: Techniques for optimising layers in mid-level projects.</p>
                 <a href="https://github.com/Relborg737/layerzoo/blob/main/intermediate/layer_optimization.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
             </details>
             
@@ -85,7 +85,21 @@
             </details>
         </div>
     </div>
-</section>  
+</section> 
+  
+<!-- JavaScript for accordion behaviour (one open per column) -->    
+<script>
+    const allDetails = document.querySelectorAll('#resources details.collapsible');
+    allDetails.forEach(detail => {
+        detail.addEventListener('toggle', function() {
+            if (this.open) {
+                allDetails.forEach(d => {
+                    if (d !== this) d.open = false;
+                });
+            }
+        });
+    });
+</script>  
 
   <!-- Navigation Script -->
         <script>
