@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educator Blueprint - LayerZoo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="rightVerticalLine">LayerZoo.com</a>
+    <a href="educator-blueprint.html">Educator Blueprint</a>
+    <a href="competitions.html">Competitions</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button"></a>
+</div>
+
+<div style="margin-top: 80px; padding: 30px; max-width: 1100px; margin-left: auto; margin-right: auto;">
+    <h1>Educator Blueprint</h1>
+    <p style="font-size: 1.1rem; margin-bottom: 40px;">Practical resources and decision tools for educators teaching Bitcoin and Layer 2 technologies.</p>
+
+    <!-- Decision Tree v6 (neutral version) -->
+    <iframe src="educator-onboarding-decision-tree-v6.html" style="width:100%; height:820px; border:1px solid #333; border-radius: 12px; background: #fafafa;"></iframe>
+
+    <h2 style="margin-top: 60px;">Teaching Resources</h2>
+    <p>Organized by knowledge level. These materials are designed to help educators onboard new users effectively.</p>
+
+    <!-- Original resources section preserved -->
+    <section id="resources">
+        <h3>Beginner Resources</h3>
+        <p>Coming soon...</p>
+        
+        <h3>Intermediate Resources</h3>
+        <details>
+            <summary>Web3 Personal Security</summary>
+            <a href="https://raw.githubusercontent.com/Relborg737/layerzoo_website/main/documents/intermediate/web3_personal_security.pdf" target="_blank">Download PDF</a>
+        </details>
+        
+        <h3>Advanced Resources</h3>
+        <p>Coming soon...</p>
+    </section>
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+</body>
+</html>
