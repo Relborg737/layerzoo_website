@@ -7,7 +7,7 @@ We run competitions that add real value, you can find the most current competiti
 # Bitcoin
 # Alpen 
 # Ark
-# Botanix
+
 # Citrea
 # General
 ## What is the difference between a Coin and a Token?
