@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Navigation Bar -->
-<div class="topnav" id="myTopnav">
-    <a href="index.html" class="rightVerticalLine">LayerZoo.com</a>
+<nav id="mainNav" class="topnav">
+    <a href="index.html">LayerZoo</a>
     <a href="educator-blueprint.html">Educator Blueprint</a>
-    <a href="educator-toolkits.html">Educator Toolkits</a>
+    <a href="educator-toolkits.html" style="color:#22c55e; font-weight:600;">Educator Toolkits</a>
     <a href="competitions.html">Competitions</a>
     <a href="faq.html">FAQ</a>
     <a href="about.html">About</a>
-    <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
-    </a>
-</div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="float:right; font-size:28px; padding:10px 15px;">≡</a>
+</nav>
+<!-- Navigation Bar -->
 
 <div style="margin-top: 100px; padding: 20px; max-width: 1400px; margin-left: auto; margin-right: auto;">
 
@@ -345,6 +343,7 @@
                 }
             }
         </script>
+<script src="menu.js"></script>
 </body>
 </html>
 <script src="static-menu.js"></script>
