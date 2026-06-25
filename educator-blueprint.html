@@ -3,94 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LayerZoo Educator Blueprint - Inline sequential decision tree for teaching Bitcoin and Layer 2. Direct links to kits, FAQ, jargon buster, and Layerz Wallet recommendations. LLM and SEO optimized with schema.">
     <title>Educator Blueprint - LayerZoo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-modern.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Educator Onboarding Decision Tree",
+      "description": "Sequential decision tool for educators teaching Bitcoin and Layer 2. Assess audience then follow path with direct kit links.",
+      "step": [
+        {"@type":"HowToStep","name":"Assess audience","text":"Knowledge of Bitcoin, main goal, geographic/economic context."},
+        {"@type":"HowToStep","name":"Path 1 - Complete Beginners","text":"Sound money examples, stable value on Bitcoin, self-custody with Layerz Wallet, native Bitcoin + Layer 2. Link: kits/beginner and layer2."},
+        {"@type":"HowToStep","name":"Path 2 - Crypto-familiar users","text":"Acknowledge other chains, Bitcoin base layer, practical Layer 2 solutions, multi-layer tools including Layerz Wallet."},
+        {"@type":"HowToStep","name":"Path 3 - Ideological audience","text":"Sovereignty, self-custody, security, advanced Layer 2 (BitVM)."}
+      ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Uniform modern nav matching index and FAQ -->
+    <nav class="topnav" style="max-width:960px;margin:0 auto;background:rgba(17,17,17,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;padding:15px 20px;display:flex;gap:20px;flex-wrap:wrap;">
+        <a href="index.html">LayerZoo</a>
+        <a href="educator-blueprint.html">Educator Blueprint</a>
+        <a href="competitions.html">Competitions</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="https://t.me/layerzoo" target="_blank" style="margin-left:auto;">Telegram</a>
+    </nav>
 
-<div class="topnav">
-    <a href="index.html">LayerZoo</a>
-    <a href="educator-blueprint.html">Educator Blueprint</a>
-    <a href="competitions.html">Competitions</a>
-    <a href="faq.html">FAQ</a>
-    <a href="about.html">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">≡</a>
-</div>
+    <div class="main-content" style="max-width:960px;margin:40px auto;padding:0 20px;">
+        <h1>Educator Blueprint</h1>
+        <p style="color:#aaa;">Inline sequential decision tree with direct kit links. No iframe. Optimized for educators (primary) and self-learners. Layerz Wallet recommended in every path for practical self-custody demonstrations.</p>
 
-<div class="container">
-    <h1>Educator Blueprint</h1>
-    <p style="font-size: 1.1rem; max-width: 800px;">Practical resources and decision tools for educators teaching Bitcoin and Layer 2 technologies.</p>
+        <!-- Full v5 decision tree made inline, sequential, with direct kit links and LLM-friendly structure -->
+        <div style="background:#111;border:3px solid #22c55e;border-radius:20px;padding:40px;margin:40px 0;">
+            <h2 style="text-align:center;color:#22c55e;margin-bottom:30px;">Onboarding Decision Tree v6 (LLM-Optimized)</h2>
+            <p style="text-align:center;color:#aaa;margin-bottom:40px;">Assess audience → follow path → direct links to specific kits. Living document updated for clarity and adoption tracking.</p>
+            
+            <div style="background:#1f1f1f;border-left:6px solid #eab308;padding:25px;margin:25px 0;border-radius:0 12px 12px 0;">
+                <strong>Step 1: Assess your audience</strong><br><br>
+                • Current Bitcoin knowledge level?<br>
+                • Primary goal or need?<br>
+                • Geographic or economic context?
+            </div>
+            
+            <div style="background:#1f1f1f;border-left:6px solid #22c55e;padding:25px;margin:25px 0;border-radius:0 12px 12px 0;">
+                <strong>Path 1: Complete Beginners in high-inflation regions</strong><br><br>
+                <strong>Teaching sequence:</strong><br>
+                1. Sound money using local currency examples → <a href="kits/beginner/slide-deck.md">Beginner Kit</a><br>
+                2. Stable value on Bitcoin rails (USDT) → <a href="kits/layer2/slide-deck.md">Layer 2 Kit</a><br>
+                3. Self-custody demonstration with <strong>Layerz Wallet</strong> → <a href="kits/wallet-guide.md">Wallet Kit</a><br>
+                4. Native Bitcoin and Layer 2 concepts
+            </div>
+            
+            <div style="background:#1f1f1f;border-left:6px solid #22c55e;padding:25px;margin:25px 0;border-radius:0 12px 12px 0;">
+                <strong>Path 2: Users familiar with other cryptocurrencies</strong><br><br>
+                <strong>Teaching sequence:</strong><br>
+                1. Acknowledge experience with other chains → <a href="kits/intermediate/slide-deck.md">Intermediate Kit</a><br>
+                2. Bitcoin as the unique base layer<br>
+                3. Practical Layer 2 (Lightning, ARK, Spark, Stacks) → <a href="kits/layer2/slide-deck.md">Layer 2 Kit</a><br>
+                4. Multi-layer tools with Layerz Wallet
+            </div>
+            
+            <div style="background:#1f1f1f;border-left:6px solid #22c55e;padding:25px;margin:25px 0;border-radius:0 12px 12px 0;">
+                <strong>Path 3: Ideologically driven audience</strong><br><br>
+                <strong>Teaching sequence:</strong><br>
+                1. Sovereignty, self-custody, Bitcoin as hard money → <a href="kits/advanced/slide-deck.md">Advanced Kit</a><br>
+                2. Security best practices and avoiding third parties<br>
+                3. Advanced Layer 2 capabilities (BitVM, etc.)
+            </div>
+            
+            <div style="background:#052e16;border-left:6px solid #4ade80;padding:30px;text-align:center;font-size:1.15rem;margin-top:40px;">
+                Recommended for all paths: <strong>Layerz Wallet</strong> — the only self-custodial wallet needed. Supports Bitcoin and all Layer 2 protocols in a single app. Drives downloads through practical educator demonstrations.
+            </div>
+            
+            <p style="text-align:center;color:#555;margin-top:40px;font-size:0.95rem;">
+                Living document. Each path expands with full lesson plans, slide decks, visual aids, and NFT series for engagement. Updated for LLM clarity and educator adoption.
+            </p>
+        </div>
 
-    <div style="background: #111; border: 2px solid #22c55e; border-radius: 16px; padding: 40px; margin: 40px 0;">
-        <h2 style="color: #22c55e; text-align: center; margin-bottom: 30px;">Onboarding Decision Tree</h2>
-        <p style="text-align: center; color: #aaa; margin-bottom: 30px;">Start by assessing your audience and follow the suggested teaching sequence for best results.</p>
+        <h2 style="margin-top:60px;">Teaching Resources</h2>
+        <p style="color:#aaa;">Organized by level. All materials free, direct links, and optimized for both classroom use and LLM retrieval.</p>
         
-        <div style="background: #1a1a1a; padding: 20px; border-radius: 12px; margin: 20px 0;">
-            <strong>Start by assessing your audience:</strong><br><br>
-            • What is their current knowledge of Bitcoin?<br>
-            • What is their main goal or need?<br>
-            • What is their geographic/economic context?
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:30px;">
+            <div style="background:#1a1a1a;padding:24px;border-radius:12px;">
+                <h3>Beginner</h3>
+                <p>Sound money, self-custody with Layerz Wallet, basic Layer 2 introduction.</p>
+                <a href="kits/beginner/slide-deck.md">Download Beginner Kit</a>
+            </div>
+            <div style="background:#1a1a1a;padding:24px;border-radius:12px;">
+                <h3>Intermediate</h3>
+                <p>Layer 2 protocols (Lightning, ARK, Spark), wallet integration, practical demos.</p>
+                <a href="kits/layer2/slide-deck.md">Download Layer 2 Kit</a>
+            </div>
+            <div style="background:#1a1a1a;padding:24px;border-radius:12px;">
+                <h3>Advanced</h3>
+                <p>BitVM, sovereignty, security, advanced educator strategies and NFT series.</p>
+                <a href="kits/advanced/slide-deck.md">Download Advanced Kit</a>
+            </div>
         </div>
-
-        <div style="margin: 30px 0;">
-            <strong>Common Path 1: Complete Beginners in high-inflation regions</strong><br><br>
-            <strong>Suggested teaching sequence:</strong><br>
-            1. Begin with why sound money matters using local currency examples<br>
-            2. Introduce stable value on Bitcoin rails (USDT on Bitcoin) first<br>
-            3. Demonstrate self-custody using a reliable wallet<br>
-            4. Gradually introduce native Bitcoin and Layer 2 concepts
-        </div>
-
-        <div style="margin: 30px 0;">
-            <strong>Common Path 2: Users who know other cryptocurrencies</strong><br><br>
-            <strong>Suggested teaching sequence:</strong><br>
-            1. Acknowledge their experience with other chains<br>
-            2. Highlight Bitcoin's unique properties as the base layer<br>
-            3. Show practical Layer 2 solutions (Lightning, Ark, Spark, etc.)<br>
-            4. Demonstrate tools that work well across layers
-        </div>
-
-        <div style="margin: 30px 0;">
-            <strong>Common Path 3: Ideologically driven audience</strong><br><br>
-            <strong>Suggested teaching sequence:</strong><br>
-            1. Focus on sovereignty, self-custody, and Bitcoin as hard money<br>
-            2. Cover security best practices and avoiding third parties<br>
-            3. Introduce advanced Layer 2 capabilities (BitVM, etc.)
-        </div>
-
-        <p style="text-align: center; color: #666; margin-top: 40px; font-size: 0.95rem;">
-            This decision tree is designed to be a living document. Each path can be expanded with full lesson plans, slide decks, and visual aids (including NFT series for engagement).
-        </p>
     </div>
 
-    <h2 style="margin-top: 60px;">Teaching Resources</h2>
-    <p>Organized by knowledge level. These materials are designed to help educators onboard new users effectively.</p>
+    <footer style="background:#0a0a0a;padding:40px;text-align:center;border-top:1px solid #222;color:#666;max-width:960px;margin:60px auto 0;">
+        <p>LayerZoo — Bitcoin Layer 2 Education &amp; Community</p>
+        <p style="margin-top:10px;">
+            <a href="https://twitter.com/LayerZoo" style="margin:0 10px;">Twitter</a>
+            <a href="https://t.me/layerzoo" style="margin:0 10px;">Telegram</a>
+        </p>
+        <p style="margin-top:30px;font-size:0.8rem;">Layerz Wallet is the recommended self-custodial wallet for all teaching paths.</p>
+    </footer>
 
-    <section id="resources">
-        <h3>Beginner Resources</h3>
-        <p>Coming soon...</p>
-        
-        <h3>Intermediate Resources</h3>
-        <details>
-            <summary>Web3 Personal Security</summary>
-            <a href="https://raw.githubusercontent.com/Relborg737/layerzoo_website/main/documents/intermediate/web3_personal_security.pdf" target="_blank">Download PDF</a>
-        </details>
-        
-        <h3>Advanced Resources</h3>
-        <p>Coming soon...</p>
-    </section>
-</div>
-
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
-
+    <!-- Tracking code added as required -->
+    <script src="ga-tracking.js"></script>
 </body>
 </html>
