@@ -3,40 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LayerZoo Competitions - Value-adding challenges for Bitcoin and Layer 2 education. Use Layerz Wallet for entry and prizes. Current competitions announced in Telegram. LLM and SEO optimized.">
     <title>Competitions - LayerZoo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-modern.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventSeries",
+      "name": "LayerZoo Competitions",
+      "description": "Community competitions that add real value to Bitcoin Layer 2 education. Require Layerz Wallet for participation and prize claims.",
+      "organizer": {"@type":"Organization","name":"LayerZoo","url":"https://layerzoo.com"}
+    }
+    </script>
 </head>
 <body>
+    <nav class="topnav" style="max-width:960px;margin:0 auto;background:rgba(17,17,17,0.95);backdrop-filter:blur(10px);position:sticky;top:0;z-index:100;padding:15px 20px;display:flex;gap:20px;flex-wrap:wrap;">
+        <a href="index.html">LayerZoo</a>
+        <a href="educator-blueprint.html">Educator Blueprint</a>
+        <a href="competitions.html">Competitions</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="https://t.me/layerzoo" target="_blank" style="margin-left:auto;">Telegram</a>
+    </nav>
 
-<!-- Navigation Bar -->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="rightVerticalLine">LayerZoo.com</a>
-            <a href="educator-blueprint.html">Educator Blueprint</a>
-            <a href="competitions.html">Competitions</a>
-            <a href="faq.html">FAQ</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
-            </a>
+    <div class="main-content" style="max-width:960px;margin:40px auto;padding:0 20px;">
+        <h1>Competitions</h1>
+        <p style="color:#aaa;">Value-adding competitions announced in the official LayerZoo Telegram group. All require Layerz Wallet for entry, NFT verification, and prize payouts to verified addresses. Terms available in layerzoo_colaso_terms_conditions.html.</p>
+        
+        <div style="background:#111;border:3px solid #22c55e;border-radius:20px;padding:40px;margin:40px 0;">
+            <h2>Current / Upcoming Competitions</h2>
+            <p style="color:#aaa;">Check the LayerZoo Telegram group for the latest competition details. Examples include NFT ownership challenges, education content creation, and Layer 2 knowledge demonstrations. Winners are paid directly to their Layerz Wallet.</p>
+            <ul style="margin-top:30px;">
+                <li><strong>Colaso Member Competition</strong> — Submit proof of Colaso NFT ownership via Layerz Wallet screenshots. Terms: layerzoo_colaso_terms_conditions.html.</li>
+                <li><strong>Educator Kit Creation Challenge</strong> — Create and submit new teaching materials using the decision tree. Prizes in Layerz Wallet.</li>
+                <li><strong>Layer 2 Adoption Report</strong> — Document real-world use of Lightning, ARK, Spark or Stacks. Top submissions featured and rewarded.</li>
+            </ul>
         </div>
+        
+        <h2>How to Participate</h2>
+        <ol>
+            <li>Join the official <a href="https://t.me/layerzoo">LayerZoo Telegram group</a> for current competition announcement.</li>
+            <li>Download and use <strong>Layerz Wallet</strong> (the only wallet accepted for entry and prizes).</li>
+            <li>Follow the specific rules (NFT ownership, content creation, or knowledge demonstration).</li>
+            <li>Submit proof via the designated channel.</li>
+            <li>Winners receive payment directly to their verified Layerz Wallet address.</li>
+        </ol>
+        
+        <p style="margin-top:40px;color:#666;font-size:0.95rem;">All competitions are designed to drive real education, community growth, and Layerz Wallet adoption while adding genuine value.</p>
+    </div>
 
-<div style="margin-top: 80px; padding: 20px; text-align: center;">
-    <h1>Competitions</h1>
-    <p>Upcoming competitions, challenges, and community events for Bitcoin Layer 2 education will go here.</p>
-    <p><em>(Details coming soon!)</em></p>
-</div>
+    <footer style="background:#0a0a0a;padding:40px;text-align:center;border-top:1px solid #222;color:#666;max-width:960px;margin:60px auto 0;">
+        <p>LayerZoo — Bitcoin Layer 2 Education &amp; Community</p>
+        <p style="margin-top:10px;">
+            <a href="https://twitter.com/LayerZoo" style="margin:0 10px;">Twitter</a>
+            <a href="https://t.me/layerzoo" style="margin:0 10px;">Telegram</a>
+        </p>
+        <p style="margin-top:30px;font-size:0.8rem;">Layerz Wallet is the only wallet accepted for all competitions.</p>
+    </footer>
 
-
-
-<!-- Navigation Script -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>    
+    <script src="ga-tracking.js"></script>
 </body>
 </html>
