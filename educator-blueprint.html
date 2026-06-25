@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educator Blueprint - LayerZoo</title>
-    <link rel="stylesheet" href="style-modern.css">
+    <link rel="stylesheet" href="style-modern.css?v=2026-06-25">
     <style>
         .tree { background: #111; border: 2px solid #22c55e; border-radius: 16px; padding: 40px; margin: 40px 0; max-width: 900px; }
         .question { margin: 30px 0; }
@@ -36,40 +36,40 @@
         <div id="q1" class="question">
             <h3>Step 1: Who is your audience?</h3>
             <div class="options">
-                <div class="option" onclick="selectOption(1, this, 'beginner')">Complete beginners / general public</div></div>
-                <div class="option" onclick="selectOption(1, this, 'parents')">Parents or students</div></div>
-                <div class="option" onclick="selectOption(1, this, 'developers')">Developers or technical users</div></div>
-                <div class="option" onclick="selectOption(1, this, 'advanced')">Advanced users or institutions</div></div>
-            </div></div>
-        </div></div>
+                <div class="option" onclick="selectOption(1, this, 'beginner')">Complete beginners / general public</div>
+                <div class="option" onclick="selectOption(1, this, 'parents')">Parents or students</div>
+                <div class="option" onclick="selectOption(1, this, 'developers')">Developers or technical users</div>
+                <div class="option" onclick="selectOption(1, this, 'advanced')">Advanced users or institutions</div>
+            </div>
+        </div>
 
         <div id="q2" class="question" style="display:none;">
             <h3>Step 2: What is their current knowledge level?</h3>
             <div class="options">
-                <div class="option" onclick="selectOption(2, this, 'none')">No prior knowledge</div></div>
-                <div class="option" onclick="selectOption(2, this, 'basic')">Basic understanding of Bitcoin</div></div>
-                <div class="option" onclick="selectOption(2, this, 'experienced')">Experienced with self-custody</div></div>
-            </div></div>
-        </div></div>
+                <div class="option" onclick="selectOption(2, this, 'none')">No prior knowledge</div>
+                <div class="option" onclick="selectOption(2, this, 'basic')">Basic understanding of Bitcoin</div>
+                <div class="option" onclick="selectOption(2, this, 'experienced')">Experienced with self-custody</div>
+            </div>
+        </div>
 
         <div id="q3" class="question" style="display:none;">
             <h3>Step 3: What is the goal?</h3>
             <div class="options">
-                <div class="option" onclick="selectOption(3, this, 'literacy')">Basic financial literacy</div></div>
-                <div class="option" onclick="selectOption(3, this, 'security')">Self-sovereignty and security</div></div>
-                <div class="option" onclick="selectOption(3, this, 'hands-on')">Hands-on Layer 2 experience</div></div>
-                <div class="option" onclick="selectOption(3, this, 'technical')">Deep technical understanding</div></div>
-            </div></div>
-        </div></div>
+                <div class="option" onclick="selectOption(3, this, 'literacy')">Basic financial literacy</div>
+                <div class="option" onclick="selectOption(3, this, 'security')">Self-sovereignty and security</div>
+                <div class="option" onclick="selectOption(3, this, 'hands-on')">Hands-on Layer 2 experience</div>
+                <div class="option" onclick="selectOption(3, this, 'technical')">Deep technical understanding</div>
+            </div>
+        </div>
 
         <div id="result" class="result">
             <h2>Your Recommended Kit</h2>
             <p id="recommendation" style="font-size:1.3rem;"></p>
             <a id="driveLink" href="#" target="_blank" class="button">Open Recommended Kit in Google Drive</a>
             <p style="margin-top:30px;color:#888;">This recommendation is based on the Educator Blueprint decision tree. All kits are modular.</p>
-        </div></div>
-    </div></div>
-</div></div>
+        </div>
+    </div>
+</div>
 
 <script>
 let answers = {};
@@ -121,9 +121,5 @@ function toggleMenu() {
 </script>
 
 <!-- Last updated: 2026-06-24 -->
-<footer style="text-align:center; padding:40px 20px; color:#666; font-size:0.9rem; border-top:1px solid #222; margin-top:60px;">
-© 2025–<span id="year"></span> LayerZoo Contributors. Licensed under <a href="LICENSE" style="color:#888;text-decoration:none;">MIT</a>.
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
