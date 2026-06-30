@@ -38,6 +38,34 @@
         </div>
     </div>
 
+    <!-- Free Bitcoin Educator Starter Kit Lead Magnet -->
+    <div style="max-width: 960px; margin: 80px auto; padding: 0 20px;">
+        <div style="background: #111; border-radius: 20px; padding: 50px 40px; text-align: center; border: 1px solid #222;">
+            <div style="display: inline-flex; align-items: center; gap: 12px; background: #1a1a1a; padding: 8px 20px; border-radius: 30px; margin-bottom: 20px;">
+                <span style="background: #22c55e; color: #000; font-size: 0.85rem; font-weight: 700; padding: 2px 10px; border-radius: 20px;">NEW</span>
+                <span style="color: #22c55e; font-weight: 600;">EDUCATOR RESOURCE</span>
+            </div>
+            
+            <h2 style="font-size: 2.1rem; margin: 0 0 16px 0; color: #fff;">Free Bitcoin Educator Starter Kit</h2>
+            <p style="font-size: 1.15rem; max-width: 620px; margin: 0 auto 30px; color: #bbb; line-height: 1.5;">
+                Complete ready-to-teach materials including 5 lesson plans, slide decks, worksheets, 
+                Layerz Wallet integration guide, and assessment tools.
+            </p>
+            
+            <form onsubmit="return submitEducatorKit(this)" style="max-width: 420px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: 1fr auto; gap: 12px; margin-bottom: 12px;">
+                    <input type="email" name="email" placeholder="your@email.com" required 
+                           style="background:#1a1a1a; border:1px solid #333; color:#ddd; padding:16px 20px; border-radius:12px; font-size:1rem; outline:none;">
+                    <button type="submit" 
+                            style="background:#22c55e; color:#000; border:none; padding:0 32px; border-radius:12px; font-weight:700; cursor:pointer; white-space:nowrap;">
+                        Get The Kit Free
+                    </button>
+                </div>
+                <p style="font-size:0.8rem; color:#666; margin:0;">We'll send it instantly. Zero spam.</p>
+            </form>
+        </div>
+    </div>
+
     <h2 style="text-align:center; margin-bottom: 40px;">Collections</h2>
     
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
@@ -80,7 +108,8 @@
 </div>
 
 <script src="menu.js"></script>
-<!-- Last updated: 2026-06-25 -->
+<script src="lead-magnet.js"></script>
+<!-- Last updated: 2026-06-30 -->
 <script src="ga-tracking.js"></script>
 <footer style="text-align:center; padding:40px 20px; color:#666; font-size:0.9rem; border-top:1px solid #222; margin-top:60px;">© 2025–<span id="year"></span> LayerZoo Contributors. Licensed under <a href="LICENSE" style="color:#888;text-decoration:none;">MIT</a>.</footer><script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q00T991CHC"></script>
