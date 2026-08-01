@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightning Storm Run — LayerZoo</title>
+    <link rel="stylesheet" href="style-modern.css">
+</head>
+<body>
+
+<nav id="mainNav" class="topnav" style="max-width: 960px; margin: 0 auto; padding: 0 20px; background: #0a0a0a; border-bottom: 1px solid #222;">
+    <a href="index.html">LayerZoo</a>
+    <a href="educator-blueprint.html">Educator Blueprint</a>
+    <a href="educator-toolkits.html">Educator Toolkits</a>
+    <a href="competitions.html">Competitions</a>
+    <a href="faq.html">FAQ</a>
+    <a href="about.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="float:right; font-size:28px; padding:10px 15px;">≡</a>
+</nav>
+
+<div class="container" style="max-width: 960px; margin: 0 auto; padding: 40px 20px;">
+    <div style="text-align:center;">
+        <span class="badge badge-soft">Soft-open habitat</span>
+        <h1 style="margin:14px 0 8px; color:#fff;">Lightning Storm Run</h1>
+        <p style="font-size:1.15rem; max-width:700px; margin:0 auto 24px; color:#ccc;">
+            Bitcoin’s payments layer — fast paths above the base chain. Soft-open: story + challenge now; fuller collection art later.
+        </p>
+    </div>
+
+    <div class="panel" style="border-color:#1e3a5f;">
+        <div class="viz viz-ln" style="height:160px; border-radius:12px; margin-bottom:20px; font-size:3rem;">⚡</div>
+        <h2>Storm briefing</h2>
+        <p style="color:#ccc;">
+            Main-chain Bitcoin settles like a heavy court ledger: deliberate, global, expensive if you use it for every coffee.
+            Lightning is the side street where tabs stay open between people who transact often — then settle back when it matters.
+        </p>
+        <p style="color:#ccc;">
+            You do not need to run a node to understand the metaphor. You need to feel the tradeoff:
+            <strong style="color:#fff;">speed and low fees</strong> versus <strong style="color:#fff;">channel setup, liquidity, and new failure modes</strong>.
+        </p>
+        <div class="tag-row">
+            <span class="tag">Instant payments</span>
+            <span class="tag">Channels</span>
+            <span class="tag">Fees vs base chain</span>
+            <span class="tag">Layer 2</span>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>Challenge — “Coffee vs court”</h2>
+        <p style="color:#ccc;">Draw or write a two-column comparison (phone notes are fine):</p>
+        <ul style="color:#ccc;">
+            <li><strong style="color:#fff;">Left:</strong> one everyday payment you’d hate to put on a slow global ledger</li>
+            <li><strong style="color:#fff;">Right:</strong> one transfer you’d want maximum settlement security for</li>
+        </ul>
+        <p style="color:#ccc;">Under each, add one sentence: why Lightning (or not) fits. Post with tag <code>StormRun</code> in
+        <a href="https://t.me/LayerZoo" target="_blank" rel="noopener">t.me/LayerZoo</a>, or use it as a 15-minute classroom pair exercise.</p>
+    </div>
+
+    <div class="panel">
+        <h2>LayerQuest note</h2>
+        <p style="color:#ccc; margin:0;">
+            Night Watch <strong style="color:#fff;">Week 4</strong> runs through this habitat (unlocks 29 Aug 2026).
+            Habitat is open for preview now. Full board: <a href="competitions.html">LayerQuest / Competitions</a>.
+        </p>
+    </div>
+
+    <div class="panel">
+        <h2>Teach this</h2>
+        <p style="color:#ccc;">Layer 2 sessions land best after Base Camp foundations. Use the Blueprint if you’re choosing kits for a mixed room.</p>
+        <div class="alive-actions">
+            <a class="btn" href="educator-blueprint.html">Educator Blueprint</a>
+            <a class="btn-ghost" href="collection_bitcoin.html">Bitcoin Base Camp</a>
+            <a class="btn-ghost" href="educator-toolkits.html">Toolkits</a>
+        </div>
+    </div>
+</div>
+
+<script src="menu.js"></script>
+<script src="ga-tracking.js"></script>
+<footer style="text-align:center; padding:40px 20px; color:#666; font-size:0.9rem; border-top:1px solid #222; margin-top:60px;">© 2025–<span id="year"></span> LayerZoo Contributors. Licensed under <a href="LICENSE" style="color:#888;text-decoration:none;">MIT</a>.</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
