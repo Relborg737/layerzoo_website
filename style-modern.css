@@ -90,3 +90,43 @@ a.habitat-card:hover { border-color:#22c55e66; transform:translateY(-2px); }
 }
 .path-card h2 { margin:0 0 10px; color:#22c55e; font-size:1.25rem; }
 .path-card p { margin:0 0 16px; color:#bbb; }
+
+.meta-line { color:#888; margin:0 0 28px; text-align:center; font-size:0.95rem; }
+.trail { text-align:center; color:#666; margin:8px 0 0; }
+.trail a { color:#4ade80; text-decoration:none; }
+.field-glass h2 { margin-top:0; }
+.prompt-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+.prompt-card {
+  background:#0c140f; border:1px solid #1f4d33; border-radius:12px; padding:16px 18px;
+  text-align:left; color:inherit; cursor:pointer; width:100%;
+}
+.prompt-card h3 { margin:6px 0 8px; color:#fff; font-size:1.05rem; }
+.prompt-card p { margin:0 0 8px; color:#bbb; font-size:0.95rem; }
+.prompt-card.active { border-color:#22c55e; }
+.prompt-card .seal-hint { margin:8px 0 0; }
+.mode-row { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 8px; }
+.mode-btn {
+  background:#111; color:#ddd; border:1px solid #333; border-radius:999px;
+  padding:6px 12px; cursor:pointer; font-size:0.85rem;
+}
+.mode-btn.on { border-color:#22c55e; color:#4ade80; }
+.seal-box {
+  background:#0a0a0a; border:1px dashed #333; border-radius:10px;
+  padding:12px 14px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:#e5e5e5; word-break:break-word;
+}
+.colaso-grid {
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:16px;
+}
+.colaso-tile-wrap { margin:0; }
+.colaso-tile {
+  display:block; width:100%; padding:0; background:#111; border:1px solid #222;
+  border-radius:12px; overflow:hidden; cursor:pointer; color:inherit; text-align:left;
+}
+.colaso-tile.selected { border-color:#22c55e; box-shadow:0 0 0 1px #22c55e55; }
+.colaso-tile img { width:100%; height:auto; display:block; }
+.colaso-tile .cap { display:block; padding:8px 10px 10px; font-size:0.82rem; color:#aaa; }
+.colaso-tile .cap strong { color:#fff; }
+.colaso-tile-wrap .gamma {
+  display:inline-block; margin:6px 2px 0; font-size:0.75rem; color:#4ade80; text-decoration:none;
+}
