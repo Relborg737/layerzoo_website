@@ -20,32 +20,32 @@
 
 <div class="container" style="max-width: 1100px; margin: 0 auto; padding: 40px 20px;">
     <div style="text-align:center;">
-        <span class="kicker">Night Watch · Weeks 0-1 terrain</span>
+        <span class="kicker">Grounds Pass · Grove stamp</span>
         <h1 style="margin:14px 0 8px; color:#fff;">Colaso Collection</h1>
         <p style="font-size:1.1rem; max-width:720px; margin:0 auto 8px; color:#ccc;">
             Launch collection by Stacks Ambassador Colaso. 99 pieces, fully minted.
-            This grove is the first habitat of LayerQuest Season 1, not a storefront.
+            First room on the Grounds Pass. Not a storefront.
         </p>
-        <p class="meta-line">Late joiners still do both clues. No prize. Only attention.</p>
+        <p class="meta-line">Night Watch is closed. The Grove is still open. One look is the stamp.</p>
     </div>
 
     <div class="panel field-glass" id="field-glass">
         <h2>Night Watch Field Glass</h2>
         <p style="color:#ccc; margin:0 0 16px;">
-            Weeks 0 and 1 happen here. Look first. Then log a seal in
-            <a href="https://t.me/LayerZoo" target="_blank" rel="noopener">t.me/LayerZoo</a>.
-            Click a piece to keep it on this page and drop its number into your seal.
+            Use this for the Grove stamp: one look, then one sentence.
+            Log it in <a href="https://t.me/LayerZoo" target="_blank" rel="noopener">t.me/LayerZoo</a>
+            as <code>Pass · Grove · [one sentence]</code>. Click a piece to keep it on this page.
         </p>
 
         <div class="prompt-grid">
             <button type="button" class="prompt-card active" id="card-w0" data-mode="w0">
-                <div class="status-live">Week 0 · still open</div>
+                <div class="status-live">Grove look</div>
                 <h3>Any three pieces</h3>
                 <p>One sentence each: mood, risk, or a Bitcoin idea the art suggests. No wrong answers.</p>
                 <p class="seal-hint"><code>W0 · #12 #44 #71 · …</code></p>
             </button>
             <button type="button" class="prompt-card" id="card-w1" data-mode="w1">
-                <div class="status-live">Week 1 · still open</div>
+                <div class="status-live">Optional second look</div>
                 <h3>One piece</h3>
                 <p>Find scarcity, time, or custody. Then say why in one line.</p>
                 <p class="seal-hint"><code>W1 · #n · why</code></p>
@@ -58,8 +58,8 @@
             <button type="button" class="mode-btn" id="mode-w1" data-mode="w1">Week 1</button>
         </div>
 
-        <p style="margin:0 0 8px; color:#888; font-size:0.85rem;">Copy-ready Telegram seal. Add your sentence after the dots.</p>
-        <div class="seal-box" id="seal-line">W0 · · …</div>
+        <p style="margin:0 0 8px; color:#888; font-size:0.85rem;">Copy-ready Telegram stamp. Add your sentence after the dots.</p>
+        <div class="seal-box" id="seal-line">Pass · Grove · …</div>
         <div class="alive-actions" style="margin-top:12px;">
             <button type="button" class="btn" id="copy-seal">Copy seal</button>
             <a class="btn-ghost" href="https://t.me/LayerZoo" target="_blank" rel="noopener">Log it in Telegram</a>
@@ -102,9 +102,9 @@
     function sealText() {
         if (mode === 'w0') {
             var bits = nums().map(function (n) { return '#' + n; }).join(' ');
-            return 'W0 · ' + (bits || '') + ' · …';
+            return 'Pass · Grove · ' + (bits || '') + ' · …';
         }
-        return 'W1 · ' + (picked[0] ? '#' + picked[0] : '') + ' · ';
+        return 'Pass · Grove · ' + (picked[0] ? '#' + picked[0] : '') + ' · ';
     }
 
     function renderSeal() {
@@ -127,8 +127,8 @@
         mode = next;
         picked = [];
         noteEl.textContent = next === 'w0'
-            ? 'Week 0: pick up to three pieces.'
-            : 'Week 1: pick one piece.';
+            ? 'Grove stamp: pick up to three pieces.'
+            : 'Optional second look: pick one piece.';
         document.getElementById('mode-w0').classList.toggle('on', next === 'w0');
         document.getElementById('mode-w1').classList.toggle('on', next === 'w1');
         document.getElementById('card-w0').classList.toggle('active', next === 'w0');
@@ -144,14 +144,14 @@
             noteEl.textContent = '';
         } else if (mode === 'w1') {
             picked = [n];
-            noteEl.textContent = 'Piece #' + n + ' is in the Week 1 seal.';
+            noteEl.textContent = 'Piece #' + n + ' is in the Grove stamp.';
         } else if (picked.length >= 3) {
-            noteEl.textContent = 'Three is enough for Week 0. Unclick one to swap.';
+            noteEl.textContent = 'Three is enough for the Grove look. Unclick one to swap.';
         } else {
             picked.push(n);
             noteEl.textContent = picked.length === 3
-                ? 'Three pieces locked for Week 0. Copy the seal and add your sentences.'
-                : 'Added #' + n + '. ' + (3 - picked.length) + ' more for Week 0.';
+                ? 'Three pieces locked. Copy the stamp and add your sentence.'
+                : 'Added #' + n + '. ' + (3 - picked.length) + ' more for the Grove look.';
         }
         renderSeal();
         markTiles();
